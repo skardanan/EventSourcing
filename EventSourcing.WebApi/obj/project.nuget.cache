@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L72j4zhHirpjZuTY9qc5MjO0buywxsNXstrYra+H3ka/j/h0stiAOTgu5Ad3T/mtnxtJ0fQ4DCWJJuyWWHgyNA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sara\\Source\\Repos\\EventSourcing\\EventSourcing.WebApi\\EventSourcing.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sara\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

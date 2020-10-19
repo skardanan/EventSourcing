@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e68c78de-c4e1-42dd-8cbe-70424154a161</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.StaticWebAssets.xml" />
+    <Content Include="bin\Debug\netcoreapp3.1\Properties\launchSettings.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\netcoreapp3.1\staticwebassets\EventSourcing.WebApi.StaticWebAssets.xml" />
+    <Content Include="obj\EventSourcing.WebApi.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.pdb" />
+    <None Include="EventSourcing.WebApi.csproj" />
+    <None Include="EventSourcing.WebApi.csproj.user" />
+    <None Include="obj\Container\AbsoluteOutputAssemblyPath.cache" />
+    <None Include="obj\Container\AdditionalProbingPaths.cache" />
+    <None Include="obj\Container\ContainerCreationResult.cache" />
+    <None Include="obj\Container\ContainerDevelopmentMode.cache" />
+    <None Include="obj\Container\ContainerId.cache" />
+    <None Include="obj\Container\ContainerName.cache" />
+    <None Include="obj\Container\ContainerOperatingSystemFlavor.cache" />
+    <None Include="obj\Container\ContainerRunContext.cache" />
+    <None Include="obj\Container\DebuggeeArguments.cache" />
+    <None Include="obj\Container\DebuggeeKillProcessCommand.cache" />
+    <None Include="obj\Container\DebuggeeProgram.cache" />
+    <None Include="obj\Container\DebuggeeWorkingDirectory.cache" />
+    <None Include="obj\Container\FastModeProjectMountDirectory.cache" />
+    <None Include="obj\Container\ImageBuildContext.cache" />
+    <None Include="obj\Container\ImageId.cache" />
+    <None Include="obj\Container\OperatingSystemName.cache" />
+    <None Include="obj\Container\TargetFramework.cache" />
+    <None Include="obj\Container\VsDbgScript.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.exe" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\EventSourcing.WebApi.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\staticwebassets\EventSourcing.WebApi.StaticWebAssets.Manifest.cache" />
+    <None Include="obj\EventSourcing.WebApi.csproj.nuget.g.props" />
+    <None Include="obj\EventSourcing.WebApi.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+
+</Project>
