@@ -29,8 +29,6 @@
     <None Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.dll" />
     <None Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.exe" />
     <None Include="bin\Debug\netcoreapp3.1\EventSourcing.WebApi.pdb" />
-    <None Include="EventSourcing.WebApi.csproj" />
-    <None Include="EventSourcing.WebApi.csproj.user" />
     <None Include="obj\Container\AbsoluteOutputAssemblyPath.cache" />
     <None Include="obj\Container\AdditionalProbingPaths.cache" />
     <None Include="obj\Container\ContainerCreationResult.cache" />
