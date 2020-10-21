@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Infra", "2. Infra", "{D1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Endpoint", "3. Endpoint", "{850A2BC8-93DC-48E8-8031-D3A3AC83A93E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing.Domain", "EventSourcing.Domain\EventSourcing.Domain.csproj", "{B42E4393-2450-4A15-B60F-9F045BBDF9E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourcing.Domain", "EventSourcing.Domain\EventSourcing.Domain.csproj", "{B42E4393-2450-4A15-B60F-9F045BBDF9E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing.DataAccess", "EventSourcing.DataAccess\EventSourcing.DataAccess.csproj", "{D0C52946-66E4-4017-B071-61F7C27C295C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourcing.DataAccess", "EventSourcing.DataAccess\EventSourcing.DataAccess.csproj", "{D0C52946-66E4-4017-B071-61F7C27C295C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing.ApplicationService", "EventSourcing.ApplicationService\EventSourcing.ApplicationService.csproj", "{ECBF142B-5708-4FE6-923D-0CC7005649A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourcing.ApplicationService", "EventSourcing.ApplicationService\EventSourcing.ApplicationService.csproj", "{ECBF142B-5708-4FE6-923D-0CC7005649A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing.WebApi", "EventSourcing.WebApi\EventSourcing.WebApi.csproj", "{F7477A3B-EDEA-4AD7-A756-1E4E8C1AAC6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourcing.WebApi", "EventSourcing.WebApi\EventSourcing.WebApi.csproj", "{F7477A3B-EDEA-4AD7-A756-1E4E8C1AAC6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing.Database", "EventSourcing.Database\EventSourcing.Database.csproj", "{AE5FF154-4679-4D07-B011-D6EF5F03E72A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourcing.Database", "EventSourcing.Database\EventSourcing.Database.csproj", "{AE5FF154-4679-4D07-B011-D6EF5F03E72A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing.Abstraction", "EventSourcing.Abstraction\EventSourcing.Abstraction.csproj", "{137325A3-940B-4356-B8B5-B8059886DDAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AE5FF154-4679-4D07-B011-D6EF5F03E72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE5FF154-4679-4D07-B011-D6EF5F03E72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE5FF154-4679-4D07-B011-D6EF5F03E72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{137325A3-940B-4356-B8B5-B8059886DDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137325A3-940B-4356-B8B5-B8059886DDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137325A3-940B-4356-B8B5-B8059886DDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137325A3-940B-4356-B8B5-B8059886DDAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{ECBF142B-5708-4FE6-923D-0CC7005649A6} = {0AD1C50D-40B2-4C26-B056-B23765BC7CB4}
 		{F7477A3B-EDEA-4AD7-A756-1E4E8C1AAC6D} = {850A2BC8-93DC-48E8-8031-D3A3AC83A93E}
 		{AE5FF154-4679-4D07-B011-D6EF5F03E72A} = {D1EA292A-0C92-4E5A-B9D7-BCBE310CBE48}
+		{137325A3-940B-4356-B8B5-B8059886DDAF} = {0AD1C50D-40B2-4C26-B056-B23765BC7CB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B63D5F6-6E75-4E01-80E7-1D398BEDB009}

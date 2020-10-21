@@ -1,0 +1,16 @@
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\obj\Debug\netstandard2.0\EventSourcing.DataAccess.csprojAssemblyReference.cache
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\obj\Debug\netstandard2.0\EventSourcing.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\obj\Debug\netstandard2.0\EventSourcing.DataAccess.AssemblyInfo.cs
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\obj\Debug\netstandard2.0\EventSourcing.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.DataAccess.deps.json
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.DataAccess.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.DataAccess.pdb
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.Abstraction.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.Database.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.Domain.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.Abstraction.pdb
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.Database.pdb
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\bin\Debug\netstandard2.0\EventSourcing.Domain.pdb
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\obj\Debug\netstandard2.0\EventSourcing.DataAccess.csproj.CopyComplete
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\obj\Debug\netstandard2.0\EventSourcing.DataAccess.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.DataAccess\obj\Debug\netstandard2.0\EventSourcing.DataAccess.pdb

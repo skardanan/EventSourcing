@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JQImEtXzstQbZV9Dxt+R7U84Lcfn3UD4qQVTGefkkfQYxHSnXoOGa2C9ohkvJluOOu7EdgwnSEPhQuyZH0pfuA==",
+  "dgSpecHash": "E6Owzux8GgMYbuwhgXf0e0xA5vCtcj8OkgYlabdZ0pXrk0V5R9IALAfdXrzDg4SNVfahiN8pH+MLwYDTu4jo/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sara\\Source\\Repos\\EventSourcing\\EventSourcing.Domain\\EventSourcing.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sara\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],

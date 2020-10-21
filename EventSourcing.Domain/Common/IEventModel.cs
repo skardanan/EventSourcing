@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EventSourcing.Domain.Entities
+namespace EventSourcing.Domain.Common
 {
-    class Class1
+    public interface IEventModel
     {
     }
 }

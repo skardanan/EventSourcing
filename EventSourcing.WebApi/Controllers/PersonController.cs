@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
+using EventSourcing.ApplicationService.Dtos;
+using EventSourcing.ApplicationService.Services;
 namespace EventSourcing.WebApi.Controllers
 {
     [ApiController]
@@ -23,17 +24,16 @@ namespace EventSourcing.WebApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpPost]
+        public async Task Create([FromBody] PersonDto person, [FromServices] IPersonService service)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            await service.Create(person);
         }
+        [HttpGet]
+        public async Task<PersonDto> GetById([FromQuery] string id, [FromServices] IPersonService service)
+        {
+            return await service.Get(id);
+        }
+        
     }
 }
