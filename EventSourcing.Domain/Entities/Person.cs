@@ -32,11 +32,35 @@ namespace EventSourcing.Domain.Entities
         public static Person Create(string name, string family, string nationalCode, string motherName, string fatherName, string birthDate)
         {
             var person = new Person();
-            var createEvent = new PersonCreated(Guid.NewGuid().ToString(), name, family, nationalCode, motherName, fatherName, birthDate);
+            var createEvent = new PersonCreated(Guid.NewGuid().ToString(), name, family, motherName, fatherName, birthDate, nationalCode);
             person.ApplyEvent(createEvent);
             return person;
         }
         public void On(PersonCreated @event)
+        {
+            PersonId = Guid.Parse(@event.PersonId);
+            Name = @event.Name;
+            Family = @event.Family;
+            MotherName = @event.MotherName;
+            FatherName = @event.FatherName;
+            NationalCode = @event.NationalCode;
+            BirthDate = @event.BirthDate;
+        }
+        public void DeletePerson(string personId)
+        {
+            ApplyEvent(new PersonDeleted(true, personId));
+        }
+        public void On(PersonDeleted @event)
+        {
+            PersonId = Guid.Parse(@event.PersonId);
+            IsDeleted = @event.IsDeleted;
+        }
+        public void Changed(string personId, string name, string family, string nationalCode, string motherName, string fatherName, string birthDate)
+        {
+            var createEvent = new PersonDataChanged(personId, name, family, motherName, fatherName, birthDate, nationalCode);
+            ApplyEvent(createEvent);
+        }
+        public void On(PersonDataChanged @event)
         {
             PersonId = Guid.Parse(@event.PersonId);
             Name = @event.Name;

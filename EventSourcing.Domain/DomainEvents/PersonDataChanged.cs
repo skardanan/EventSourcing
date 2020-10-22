@@ -5,9 +5,9 @@ using System.Text;
 
 namespace EventSourcing.Domain.DomainEvents
 {
-    public class PersonCreated : IEventModel
+    public class PersonDataChanged : IEventModel
     {
-        public PersonCreated(string personId,string name, string family, string motherName, string fatherName, string birthDate, string nationalCode)
+        public PersonDataChanged(string personId, string name, string family, string motherName, string fatherName, string birthDate, string nationalCode)
         {
             PersonId = personId;
             Name = name;

@@ -8,7 +8,7 @@ namespace EventSourcing.Abstraction
 {
     public interface IPersonRepository
     {
-        Task SaveAsync(Person person);
+        Task<bool> SaveAsync(Person person);
         Task<Person> GetAsync(Guid personId);
     }
 }

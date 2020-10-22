@@ -21,12 +21,12 @@ namespace EventSourcing.Database.SqlServer
             NullValueHandling = NullValueHandling.Ignore
         };
         private readonly string _connectionString;
-        public async Task SaveEventAsync(Guid AggregateRootId, string AggregateName, IReadOnlyCollection<IEventModel> events)
+        public async Task<bool> SaveEventAsync(Guid AggregateRootId, string AggregateName, int version, IReadOnlyCollection<IEventModel> events)
         {
-            if (events.Count <= 0) return;
+            if (events.Count <= 0) return false;
 
-            string query = @"Insert into EventStore(Id, CreatedAt, Name, AggregateId, Data, Aggregate) 
-                            Values(@Id, @CreatedAt, @Name, @AggregateId, @Data, @Aggregate)";
+            string query = @"Insert into EventStore(Id, CreatedAt, Name, AggregateId, Data, Aggregate,Version) 
+                            Values(@Id, @CreatedAt, @Name, @AggregateId, @Data, @Aggregate,@Version)";
 
             var createdAt = DateTime.Now;
 
@@ -37,12 +37,14 @@ namespace EventSourcing.Database.SqlServer
                 CreatedAt = createdAt,
                 AggregateId = AggregateRootId.ToString(),
                 Data = JsonConvert.SerializeObject(e, Formatting.Indented, _jsonSerializerSettings),
-                Name = e.GetType().Name
+                Name = e.GetType().Name,
+                Version = ++version
             });
 
             using (var sqlConnection = new SqlConnection(_connectionString))
             {
-                await sqlConnection.ExecuteAsync(query, values);
+                var res = await sqlConnection.ExecuteAsync(query, values);
+                return res > 0;
             }
         }
         public async Task<IReadOnlyCollection<IEventModel>> LoadEventsAsync(Guid aggregateRootId, string aggregateName)
@@ -50,7 +52,7 @@ namespace EventSourcing.Database.SqlServer
             if (aggregateRootId == null) throw new InvalidOperationException("AggregateRootId cannot be null");
             if (string.IsNullOrWhiteSpace(aggregateName)) throw new InvalidOperationException("AggregateName cannot be null");
 
-            var query = $"select * from EventStore where AggregateId = @AggregateId and Aggregate= @Aggregate order by CreatedAt ";
+            var query = $"select * from EventStore where AggregateId = @AggregateId and Aggregate= @Aggregate order by Version,CreatedAt ";
             var value = new
             {
                 AggregateId = aggregateRootId,

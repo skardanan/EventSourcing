@@ -25,15 +25,56 @@ namespace EventSourcing.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task Create([FromBody] PersonDto person, [FromServices] IPersonService service)
+        public async Task<IActionResult> Create([FromBody] PersonDto person, [FromServices] IPersonService service)
         {
-            await service.Create(person);
+            var res = await service.Create(person);
+            if (res)
+            {
+                return Ok("Success, " + person.Name + " " + person.Family + " insert in DB");
+            }
+            else
+            {
+                return Problem("خطا در ایجاد شخص");
+            }
         }
         [HttpGet]
-        public async Task<PersonDto> GetById([FromQuery] string id, [FromServices] IPersonService service)
+        public async Task<IActionResult> GetById([FromQuery] string id, [FromServices] IPersonService service)
         {
-            return await service.Get(id);
+            var res = await service.Get(id);
+            if (res != null)
+            {
+                return Ok(res);
+            }
+            else
+            {
+                return NotFound();
+            }
         }
-        
+        [HttpPut]
+        public async Task<IActionResult> Update([FromQuery] string id,[FromBody] PersonDto person, [FromServices] IPersonService service)
+        {
+            var res = await service.Update(id,person);
+            if (res)
+            {
+                return Ok("داده باموفقیت ویرایش شد");
+            }
+            else
+            {
+                return Problem("ویرایش با خطا مواجه شد");
+            }
+        }
+        [HttpDelete]
+        public async Task<IActionResult> Delete([FromQuery] string id, [FromServices] IPersonService service)
+        {
+            var res = await service.Delete(id);
+            if (res)
+            {
+                return Ok("داده باموفقیت حذف شد");
+            }
+            else
+            {
+                return Problem("حذف با خطا مواجه شد");
+            }
+        }
     }
 }

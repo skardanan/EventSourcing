@@ -2,7 +2,6 @@ C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\bin\Debug\netsta
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.csprojAssemblyReference.cache
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.AssemblyInfoInputs.cache
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.AssemblyInfo.cs
-C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.csproj.CoreCompileInputs.cache
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\bin\Debug\netstandard2.0\EventSourcing.Database.deps.json
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\bin\Debug\netstandard2.0\EventSourcing.Database.dll
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\bin\Debug\netstandard2.0\EventSourcing.Database.pdb
@@ -10,3 +9,4 @@ C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\bin\Debug\netsta
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.csproj.CopyComplete
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.dll
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.pdb
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.Database\obj\Debug\netstandard2.0\EventSourcing.Database.csproj.CoreCompileInputs.cache

@@ -22,9 +22,13 @@ namespace EventSourcing.DataAccess.Repositories
             return new Person(eventList);
         }
 
-        public async Task SaveAsync(Person person)
+        public async Task<bool> SaveAsync(Person person)
         {
-            await _eventHandler.SaveEventAsync(person.PersonId, person.GetType().Name, person.EventList);
+           return await _eventHandler.SaveEventAsync(person.PersonId, person.GetType().Name,person.Version, person.EventList);
+        }
+        public async Task<bool> DeleteAsync(Guid personId)
+        {
+            return await _eventHandler.DeleteEventsAsync(personId, typeof(Person).Name);
         }
     }
 }

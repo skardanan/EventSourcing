@@ -8,7 +8,7 @@ namespace EventSourcing.Database
 {
     public interface IEventHandler
     {
-        Task SaveEventAsync(Guid aggregateRootId, string aggregateName, IReadOnlyCollection<IEventModel> events);
+        Task<bool> SaveEventAsync(Guid aggregateRootId, string aggregateName,int version, IReadOnlyCollection<IEventModel> events);
         Task<IReadOnlyCollection<IEventModel>> LoadEventsAsync(Guid aggregateRootId, string aggregateName);
     }
 }

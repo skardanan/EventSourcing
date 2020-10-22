@@ -13,8 +13,11 @@ namespace EventSourcing.Domain.Common
             foreach (var item in events)
             {
                 Mutate(item);
+                Version++;
             }
         }
+        public int Version { get; private set; } = -1;
+
         private readonly List<IEventModel> _eventList = new List<IEventModel>();
         public IReadOnlyCollection<IEventModel> EventList => _eventList.AsReadOnly();
         public void ApplyEvent(IEventModel @event)

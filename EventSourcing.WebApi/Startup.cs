@@ -3,6 +3,7 @@ using EventSourcing.ApplicationService.Services;
 using EventSourcing.DataAccess.Repositories;
 using EventSourcing.Database;
 using EventSourcing.Database.SqlServer;
+using EventSourcing.Database.EventStore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,7 +27,15 @@ namespace EventSourcing.WebApi
             services.AddControllers();
             services.AddScoped<IPersonService, PersonServices>();
             services.AddScoped<IPersonRepository, PersonRepository>();
-            services.AddScoped<IEventHandler, SqlHandler>();
+            var storeDb = Configuration.GetSection("StoreDB")?.Value?.ToString()??"";
+            if (storeDb == "Sql")
+            {
+                services.AddScoped<IEventHandler, SqlHandler>();
+            }
+            else if (storeDb == "EventStore")
+            {
+                services.AddScoped<IEventHandler, EventStoreHandler>();
+            }
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });

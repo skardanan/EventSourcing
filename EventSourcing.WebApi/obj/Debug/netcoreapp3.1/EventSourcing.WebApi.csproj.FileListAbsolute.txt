@@ -44,3 +44,9 @@ C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcorea
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcoreapp3.1\EventSourcing.Domain.pdb
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\obj\Debug\netcoreapp3.1\EventSourcing.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\obj\Debug\netcoreapp3.1\EventSourcing.WebApi.csproj.CopyComplete
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcoreapp3.1\EventStore.ClientAPI.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcoreapp3.1\protobuf-net.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcoreapp3.1\System.ServiceModel.Primitives.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcoreapp3.1\System.ServiceModel.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\Sara\Source\Repos\EventSourcing\EventSourcing.WebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
